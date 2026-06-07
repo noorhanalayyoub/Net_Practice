@@ -42,7 +42,8 @@ dividing a large network into smaller, manageable sub-networks called subnets (e
     └── Finance
     ```
     this division is subnetting
-  ## subnetting means take some host bits and turn them into network bits
+  - subnetting means take some host bits and turn them into network bits
+  
 ## subnet mask
 whats the purpose of a subnet mask?
 - The subnet mask helps a device determine whether another device is on the same local network or on a different network, which in turn decides whether communication is direct or must go through a router.
@@ -52,8 +53,24 @@ how does it work?
  (A AND mask) == (B AND mask) → same network
 mask -> 1 on all network bits , 0 on all host bits
 ```
-
-
+- in network mask when reading from left to right once a zero appears th rest of the mask will be zeros.for masks, there a only nine possible 8-bit blocks 
+```
+0 0 0 0 0 0 0 0 ->	0 
+1 0 0 0 0 0 0 0 ->	128
+1 1 0 0 0 0 0 0 ->	192
+1 1 1 0 0 0 0 0 ->	224
+1 1 1 1 0 0 0 0 ->	240
+1 1 1 1 1 0 0 0 ->	248
+1 1 1 1 1 1 0 0 ->	252
+1 1 1 1 1 1 1 0 ->	254
+1 1 1 1 1 1 1 1 ->	255
+```
+- important note we must that the first IP in the range must be reserved to identify the subnet, the last IP in the range i reserved for roadcasting messages across all devices in the subnet.
+  so to calculate number of usable IPs
+  ```
+  2^(number of host bits) - 2
+  ```
+  
 # Resources
 - https://www.geeksforgeeks.org/computer-networks/role-of-subnet-mask/
       
