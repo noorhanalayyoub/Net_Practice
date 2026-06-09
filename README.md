@@ -77,7 +77,7 @@ mask -> 1 on all network bits , 0 on all host bits
   ## what is a router?
     A router is a networking device that forwards data packets between different computer networks. It connects multiple packet-switched networks or subnetworks, managing traffic by directing packets to their intended IP addresses. everyrouter has an interafce for every network it conntects to
   ## interface
-      - has an IP that belongs to the subnet its connected to . IP addresses of interfaces must never overlap because it would imply that multiple interfaces belong to the same network.
+  - has an IP that belongs to the subnet its connected to . IP addresses of interfaces must never overlap because it would imply that multiple interfaces belong to the same network.
 
   
 # Resources
