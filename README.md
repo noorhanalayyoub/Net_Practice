@@ -70,6 +70,15 @@ mask -> 1 on all network bits , 0 on all host bits
   ```
   2^(number of host bits) - 2
   ```
+
+  ## what is a switch?
+    A network switch connects devices within a network (often a local area network, or LAN*) and forwards data packets to and from those devices.
+
+  ## what is a router?
+    A router is a networking device that forwards data packets between different computer networks. It connects multiple packet-switched networks or subnetworks, managing traffic by directing packets to their intended IP addresses. everyrouter has an interafce for every network it conntects to
+      ## interface
+         - has an IP that belongs to the subnet its connected to . IP addresses of interfaces must never overlap because it would imply that multiple interfaces belong to the same network.
+
   
 # Resources
 - https://www.geeksforgeeks.org/computer-networks/role-of-subnet-mask/
