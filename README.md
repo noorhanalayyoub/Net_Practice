@@ -82,4 +82,4 @@ mask -> 1 on all network bits , 0 on all host bits
   
 # Resources
 - https://www.geeksforgeeks.org/computer-networks/role-of-subnet-mask/
-      
+- https://github.com/0xtbarkan/computer-networking
